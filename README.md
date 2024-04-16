@@ -7,3 +7,15 @@ In viewDetailProfile when:
     book conference clicked the bookConference page opens (in bookConference when any conference is clicked conferenceDetails will open)
 
 The back button on book-call, bookConference, conferenceDetails redirects back to search.html to search other teachers.# Teacher_Platform
+
+
+<!-- Note by Toybur -->
+
+<!-- 
+1. Made a section in about available_call page line no 338-346. it was missed in your code. And there will be a select tag. that will be your work. line no -343
+
+2. Change Week style.
+
+3. Added 2 media query style for Weeks and content-container class line no 99 and 261.
+
+ -->

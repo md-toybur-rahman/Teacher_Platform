@@ -18,4 +18,7 @@ The back button on book-call, bookConference, conferenceDetails redirects back t
 
 3. Added 2 media query style for Weeks and content-container class line no 99 and 261.
 
+
+4. I Changed availabel_call(2) full page code. And made it modal system. For your understanding plese check the full page. Modal contaent in line no 316-350. In line no 324-327 i think you need to change those lines. There will be a input field, i am not sure. I left it for you.
+
  -->

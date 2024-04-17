@@ -7,156 +7,261 @@
     <title>Call Earnings</title>
     <link rel="stylesheet" href="./dist/output.css">
 </head>
+<!-- Style made my Toybur -->
+<style>
+    .active_option_by_toybur {
+        background: linear-gradient(180deg,
+                #ff6535 0%,
+                #ff9e48 48.9%,
+                #ffce58 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        border-bottom: 3px solid orange;
+    }
+</style>
 
 <body>
-    <div class='flex flex-col gap-2 font-primary items-center min-h-screen'>
-        <!-- header background section -->
-        <div class="bg-cover bg-center bg-no-repeat w-screen h-[280px] min-w-screen fixed top-0"
-            style="background-image: url('./img/background-2.png')">
-            <div class="flex justify-center items-center pt-[48px]">
-                <img src="./img/logo.png" alt="logo" class='' />
-            </div>
-        </div>
-        <div class='fixed mt-[200px] self-start mx-8'>
-            <p class='text-left text-[22px] text-[#585858] font-semibold'>Earnings</p>
-        </div>
-        <div class='flex flex-col gap-2 font-primary items-center min-h-screen'>
-            <div class='fixed top-[240px] left-5 right-5 mx-auto'>
-                <div
-                    class="relative flex justify-center rounded-[25px] w-full h-[140px] shadow-md bg-gradient items-center p-4 text-white gap-4 mb-1 overflow-hidden">
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="absolute left-2 top-1/2 transform -translate-y-1/2 cursor-pointer fill-white  "
-                        height="20" width="12.5" viewBox="0 0 320 512">
-                        <path fill="#ffffff"
-                            d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg"
-                        class="absolute right-2 fill-white top-1/2 transform -translate-y-1/2 cursor-pointer"
-                        height="20" width="12.5" viewBox="0 0 320 512">
-                        <path fill="#ffffff"
-                            d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
-                    </svg>
-
-                    <div class=' flex flex-col items-center font-primary'>
-                        <p class='text-white text-[24px] font-semibold'>Calls</p>
-                        <p class='text-white text-[48px] font-bold'>$230</p>
-                        <p class='text-white text-[12px] mt-[-10px] font-medium'>Earned this month</p>
-                    </div>
+    <section class="mb-24 sm:mb-0">
+        <nav class="hidden sm:flex items-center justify-center h-[96px] w-full bg-gradient px-5 lg:px-[72px]">
+            <div
+                class="w-full max-w-[1300px] mx-auto sm:flex flex-wrap md:gap-10 items-center justify-center xl:justify-between">
+                <div class="hidden xl:block">
+                    <img class="w-[308px]" src="img/logo.png" alt="logo" />
                 </div>
-                <div class='flex flex-row justify-between items-center gap-1 align-middle'>
-                    <button
-                        class=' bg-gradient w-1/2 flex flex-row items-center justify-center mt-2 focus:outline-none  h-[48px] gap-2 text-white px-auto py-2 rounded-full'>
-                        <img src="./img/mail.png" class='order-first items-center pointer-events-none w-[30px] h-[28px]' />
-                        <p class='text-base'>Email Report</p>
-                    </button>
-                    <div class='flex flex-col gap-1 w-1/2 self-center'>
-                        <label htmlFor='dateRange' class='text-xs'>Upcoming Payment Date:</label>
-
-                        <input type="text" name="" id="dateRange"
-                            class='border border-gray-400 h-[24px] text-sm rounded-full p-2' defaultValue="15/05/24" placeholder="15/05/24" readOnly />
-                    </div>
-                </div>
-                <div class="flex items-center justify-center mt-2">
-                    <button class="bg-white shadow-md text-gradient font-semibold px-2 py-2 rounded-full border border-orange-400">Add/ update your payment details</button>
+                <div class="flex items-center justify-center gap-8">
+                    <img src="img/desktop_nav_search.png" alt="" />
+                    <img src="img/desktop_nav_calender.png" alt="" />
+                    <img src="img/desktop_nav_money.png" alt="" />
+                    <img src="img/desktop_nav_files.png" alt="" />
+                    <img src="img/desktop_nav_schedule.png" alt="" />
+                    <img src="img/desktip_nav_chat.png" alt="" />
+                    <img src="img/desktop_nav_group.png" alt="" />
+                    <img src="img/desktop_nav_profile.png" alt="" />
+                    <img src="img/desktop_nav_notificaiton.png" alt="" />
+                    <img src="img/desktop_nav_exit.png" alt="" />
                 </div>
             </div>
-            <div class='overflow-y-auto mt-[500px] rounded-[50px] py-2 w-screen'
-                style="max-height: calc(100vh - 510px);">
-                <div class='flex flex-col gap-2  items-center'>
-                    <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                        <div class='flex flex-row gap-4'>
-                            <img src="./img/data.png" alt="" class='h-10 w-8' />
-                            <div class='flex flex-col'>
-                                <p class='text-[14px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                                <p class='text-[11px] text-gray-400'>2024-04-04</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class='bg-gradient rounded-xl p-2 text-white'>$50</p>
+        </nav>
+        <div class='sm:mx-auto sm:w-full sm:max-w-[1296px] sm:px-5'>
+            <div class="lg:grid grid-cols-3 gap-4 sm:min-h-[85vh] sm:py-[55px] justify-center">
+                <div>
+                    <!-- header background section -->
+                    <div class="sm:hidden bg-contain bg-cover bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full"
+                        style="background-image: url('./img/background-2.png')">
+                        <div class="flex justify-center items-center pt-[52px]">
+                            <img class="w-[189px]" src="img/logo.png" alt="logo" />
                         </div>
                     </div>
-                    <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                        <div class='flex flex-row gap-4'>
-                            <img src="./img/data.png" alt="" class='h-10 w-8' />
-                            <div class='flex flex-col'>
-                                <p class='text-[14px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                                <p class='text-[11px] text-gray-400'>2024-04-04</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class='bg-gradient rounded-xl p-2 text-white'>$50</p>
-                        </div>
+                    <div class='w-10/12 mx-auto mb-4'>
+                        <p class='sm:hidden text-left text-[24px] text-[#585858] font-bold'>Earnings</p>
                     </div>
-                    <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                        <div class='flex flex-row gap-4'>
-                            <img src="./img/data.png" alt="" class='h-10 w-8' />
-                            <div class='flex flex-col'>
-                                <p class='text-[14px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                                <p class='text-[11px] text-gray-400'>2024-04-04</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class='bg-gradient rounded-xl p-2 text-white'>$50</p>
-                        </div>
-                    </div>
-                    <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                        <div class='flex flex-row gap-4'>
-                            <img src="./img/data.png" alt="" class='h-10 w-8' />
-                            <div class='flex flex-col'>
-                                <p class='text-[14px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                                <p class='text-[11px] text-gray-400'>2024-04-04</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class='bg-gradient rounded-xl p-2 text-white'>$50</p>
-                        </div>
-                    </div>
-                    <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                        <div class='flex flex-row gap-4'>
-                            <img src="./img/data.png" alt="" class='h-10 w-8' />
-                            <div class='flex flex-col'>
-                                <p class='text-[14px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                                <p class='text-[11px] text-gray-400'>2024-04-04</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class='bg-gradient rounded-xl p-2 text-white'>$50</p>
-                        </div>
-                    </div>
-                    <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                        <div class='flex flex-row gap-4'>
-                            <img src="./img/data.png" alt="" class='h-10 w-8' />
-                            <div class='flex flex-col'>
-                                <p class='text-[14px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                                <p class='text-[11px] text-gray-400'>2024-04-04</p>
-                            </div>
-                        </div>
-                        <div>
-                            <p class='bg-gradient rounded-xl p-2 text-white'>$50</p>
-                        </div>
-                    </div>
+                    <div class='w-10/12 sm:w-full mx-auto'>
+                        <div
+                            class="relative flex justify-center rounded-[25px] w-full py-8  sm:py-20 shadow-md bg-gradient items-center px-8 text-white gap-4 mb-1 overflow-hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="absolute left-6 top-1/2 transform -translate-y-1/2 cursor-pointer fill-white  "
+                                height="20" width="12.5" viewBox="0 0 320 512">
+                                <path fill="#ffffff"
+                                    d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                class="absolute right-6 fill-white top-1/2 transform -translate-y-1/2 cursor-pointer"
+                                height="20" width="12.5" viewBox="0 0 320 512">
+                                <path fill="#ffffff"
+                                    d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+                            </svg>
 
+                            <div class=' flex flex-col items-center font-primary'>
+                                <p class='sm:hidden text-white text-[24px] font-semibold'>Calls</p>
+                                <p class='hidden sm:block text-white text-[34px] font-semibold'>Earning</p>
+                                <p class='text-white text-[48px] sm:text-[68px] font-bold'>$230</p>
+                                <p class='text-white text-[12px] sm:-text-[17px] mt-[-10px] font-medium'>Earned this
+                                    month</p>
+                            </div>
+                        </div>
+                        <div class='flex flex-row sm:flex-col justify-between items-center gap-1 align-middle'>
+                            <button
+                                class=' bg-gradient w-1/2 sm:w-full flex flex-row items-center justify-center mt-2 sm:mt-6 focus:outline-none  h-[48px] gap-2 text-white px-auto py-2 rounded-full'>
+                                <img src="./img/mail.png"
+                                    class='order-first items-center pointer-events-none w-[30px] h-[28px]' />
+                                <p class='text-base sm:text-[20px]'>Email Report</p>
+                            </button>
+                            <div class='flex flex-col gap-1 w-1/2 sm:w-full self-center sm:mt-6'>
+                                <label htmlFor='dateRange' class='text-xs text-gradient sm:text-[20px] sm:mb-4'>Upcoming
+                                    Payment
+                                    Date:</label>
+
+                                <input type="text" name="" id="dateRange"
+                                    class='border border-gray-400 sm:text-center text-sm sm:text-[17px] rounded-full p-2 sm:p-4'
+                                    defaultValue="15/05/24" placeholder="15/05/24" readOnly />
+                            </div>
+                        </div>
+                        <div class="flex sm:w-full items-center justify-center mt-2 sm:mt-6">
+                            <button
+                                class="sm:w-full bg-white shadow-md text-gradient sm:text-[20px] font-semibold px-4 py-2 sm:px-4 sm:py-4 rounded-full border border-orange-400">Add/
+                                update your payment details</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-2">
+                    <!-- Made by Toybur -->
+                    <div class="hidden sm:flex items-center gap-10 justify-center mt-8 lg:mt-0 mb-10">
+                        <div class="w-fit text-[23px] font-bold active_option_by_toybur">
+                            <p>Calls</p>
+                        </div>
+                        <div class="w-fit pb-2 text-[23px] font-bold text-[#B8B8B8]">
+                            <p>Conferences</p>
+                        </div>
+                        <div class="w-fit pb-2 text-[23px] font-bold text-[#B8B8B8]">
+                            <p>Referrals</p>
+                        </div>
+                    </div>
+                    <!-- ------------- -->
+                    <div
+                        class='overflow-y-auto mt-8 sm:mt-0 rounded-[50px] py-2 w-screen sm:w-auto max-h-[500px] sm:max-h-[80vh]'>
+                        <div class='flex flex-col gap-2  items-center'>
+                            <div
+                                class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
+                                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
+                                    <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
+                                    <div class='flex flex-col'>
+                                        <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Students name/
+                                            Call title</p>
+                                        <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p
+                                        class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>
+                                        $50</p>
+                                </div>
+                            </div>
+                            <div
+                                class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
+                                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
+                                    <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
+                                    <div class='flex flex-col'>
+                                        <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Students name/
+                                            Call title</p>
+                                        <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p
+                                        class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>
+                                        $50</p>
+                                </div>
+                            </div>
+                            <div
+                                class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
+                                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
+                                    <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
+                                    <div class='flex flex-col'>
+                                        <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Students name/
+                                            Call title</p>
+                                        <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p
+                                        class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>
+                                        $50</p>
+                                </div>
+                            </div>
+                            <div
+                                class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
+                                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
+                                    <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
+                                    <div class='flex flex-col'>
+                                        <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Students name/
+                                            Call title</p>
+                                        <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p
+                                        class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>
+                                        $50</p>
+                                </div>
+                            </div>
+                            <div
+                                class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
+                                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
+                                    <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
+                                    <div class='flex flex-col'>
+                                        <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Students name/
+                                            Call title</p>
+                                        <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p
+                                        class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>
+                                        $50</p>
+                                </div>
+                            </div>
+                            <div
+                                class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
+                                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
+                                    <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
+                                    <div class='flex flex-col'>
+                                        <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Students name/
+                                            Call title</p>
+                                        <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p
+                                        class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>
+                                        $50</p>
+                                </div>
+                            </div>
+                            <div
+                                class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
+                                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
+                                    <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
+                                    <div class='flex flex-col'>
+                                        <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Students name/
+                                            Call title</p>
+                                        <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p
+                                        class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>
+                                        $50</p>
+                                </div>
+                            </div>
+                            <div
+                                class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
+                                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
+                                    <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
+                                    <div class='flex flex-col'>
+                                        <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Students name/
+                                            Call title</p>
+                                        <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <p
+                                        class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>
+                                        $50</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Menu bottom -->
-        <div style="
-    background: linear-gradient(
-      180deg,
-      #ff6535 0%,
-      #ff9e48 48.9%,
-      #ffce58 100%
-    );
-    position: fixed;
-    bottom: 0;
-    
-  " class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-11/12 h-[64px] mb-3">
-
-            <img src="./img/4.png" alt="" />
+    </section>
+    <!-- menu component -->
+    <div class="sm:hidden fixed left-0 right-0 bottom-0 z-50 flex justify-center w-10/12 mx-auto">
+        <div
+            class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-full h-[64px] mb-3 bg-gradient">
+            <img src="./img/4.png" alt="">
             <img src="./img/dis.png" alt="" />
-            <img src="./img/peeep.png" />
-            <img src="./img/3.png" />
-
+            <img src="./img/2.png" />
+            <img src="./img/ab.png" />
+            <img src="./img/doti.png" />
         </div>
     </div>
 </body>

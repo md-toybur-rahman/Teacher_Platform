@@ -678,28 +678,12 @@ video {
   left: 0px;
 }
 
-.left-2{
-  left: 0.5rem;
-}
-
-.left-5{
-  left: 1.25rem;
-}
-
 .left-6{
   left: 1.5rem;
 }
 
 .right-0{
   right: 0px;
-}
-
-.right-2{
-  right: 0.5rem;
-}
-
-.right-5{
-  right: 1.25rem;
 }
 
 .right-6{
@@ -724,14 +708,6 @@ video {
 
 .top-\[18px\]{
   top: 18px;
-}
-
-.top-\[240px\]{
-  top: 240px;
-}
-
-.top-\[280px\]{
-  top: 280px;
 }
 
 .isolate{
@@ -806,11 +782,6 @@ video {
 .mx-4{
   margin-left: 1rem;
   margin-right: 1rem;
-}
-
-.mx-8{
-  margin-left: 2rem;
-  margin-right: 2rem;
 }
 
 .mx-\[15px\]{
@@ -1035,10 +1006,6 @@ video {
   margin-top: 100px;
 }
 
-.mt-\[180px\]{
-  margin-top: 180px;
-}
-
 .mt-\[200px\]{
   margin-top: 200px;
 }
@@ -1053,10 +1020,6 @@ video {
 
 .mt-\[31px\]{
   margin-top: 31px;
-}
-
-.mt-\[500px\]{
-  margin-top: 500px;
 }
 
 .box-border{
@@ -1182,16 +1145,12 @@ video {
   height: 12rem;
 }
 
+.h-6{
+  height: 1.5rem;
+}
+
 .h-\[12px\]{
   height: 12px;
-}
-
-.h-\[140px\]{
-  height: 140px;
-}
-
-.h-\[24px\]{
-  height: 24px;
 }
 
 .h-\[280px\]{
@@ -1251,10 +1210,6 @@ video {
   min-height: 100%;
 }
 
-.min-h-screen{
-  min-height: 100vh;
-}
-
 .w-1\/2{
   width: 50%;
 }
@@ -1293,6 +1248,10 @@ video {
 
 .w-44{
   width: 11rem;
+}
+
+.w-6{
+  width: 1.5rem;
 }
 
 .w-60{
@@ -2746,10 +2705,6 @@ video {
   padding: 0.75rem;
 }
 
-.p-4{
-  padding: 1rem;
-}
-
 .p-5{
   padding: 1.25rem;
 }
@@ -3080,10 +3035,6 @@ video {
   font-size: 20px;
 }
 
-.text-\[22px\]{
-  font-size: 22px;
-}
-
 .text-\[23px\]{
   font-size: 23px;
 }
@@ -3094,6 +3045,10 @@ video {
 
 .text-\[34px\]{
   font-size: 34px;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
 }
 
 .text-\[48px\]{
@@ -3855,12 +3810,20 @@ video {
     margin-top: 1.5rem;
   }
 
+  .sm\:mt-8{
+    margin-top: 2rem;
+  }
+
   .sm\:block{
     display: block;
   }
 
   .sm\:flex{
     display: flex;
+  }
+
+  .sm\:grid{
+    display: grid;
   }
 
   .sm\:hidden{
@@ -4002,6 +3965,10 @@ video {
 
   .sm\:flex-col-reverse{
     flex-direction: column-reverse;
+  }
+
+  .sm\:flex-wrap{
+    flex-wrap: wrap;
   }
 
   .sm\:flex-nowrap{
@@ -4235,6 +4202,18 @@ video {
     line-height: 1.75rem;
   }
 
+  .sm\:text-\[34px\]{
+    font-size: 34px;
+  }
+
+  .sm\:font-bold{
+    font-weight: 700;
+  }
+
+  .sm\:font-semibold{
+    font-weight: 600;
+  }
+
   .sm\:underline{
     text-decoration-line: underline;
   }
@@ -4320,6 +4299,10 @@ video {
 
   .xl\:justify-between{
     justify-content: space-between;
+  }
+
+  .xl\:gap-8{
+    gap: 2rem;
   }
 }
 

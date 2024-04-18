@@ -734,6 +734,26 @@ video {
   grid-column: span 3 / span 3;
 }
 
+.col-span-6{
+  grid-column: span 6 / span 6;
+}
+
+.col-span-5{
+  grid-column: span 5 / span 5;
+}
+
+.col-span-4{
+  grid-column: span 4 / span 4;
+}
+
+.col-span-8{
+  grid-column: span 8 / span 8;
+}
+
+.col-span-7{
+  grid-column: span 7 / span 7;
+}
+
 .float-start{
   float: inline-start;
 }
@@ -1000,6 +1020,10 @@ video {
 
 .mt-\[-30px\]{
   margin-top: -30px;
+}
+
+.mt-\[-75px\]{
+  margin-top: -75px;
 }
 
 .mt-\[-98px\]{
@@ -1316,6 +1340,10 @@ video {
 
 .w-\[400px\]{
   width: 400px;
+}
+
+.w-\[420px\]{
+  width: 420px;
 }
 
 .w-\[80\%\]{
@@ -1720,6 +1748,14 @@ video {
 
 .grid-cols-5{
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.grid-cols-9{
+  grid-template-columns: repeat(9, minmax(0, 1fr));
+}
+
+.grid-cols-12{
+  grid-template-columns: repeat(12, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -2713,12 +2749,20 @@ video {
   padding: 1.25rem;
 }
 
+.p-6{
+  padding: 1.5rem;
+}
+
 .p-\[25px\]{
   padding: 25px;
 }
 
 .p-\[30px\]{
   padding: 30px;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-12{
@@ -2824,6 +2868,16 @@ video {
 .py-\[15px\]{
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.py-\[5px\]{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.px-\[34px\]{
+  padding-left: 34px;
+  padding-right: 34px;
 }
 
 .pb-10{
@@ -3249,6 +3303,10 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\]{
+  color: ;
 }
 
 .underline{
@@ -3806,6 +3864,10 @@ video {
     margin-top: 3.5rem;
   }
 
+  .sm\:mt-4{
+    margin-top: 1rem;
+  }
+
   .sm\:mt-5{
     margin-top: 1.25rem;
   }
@@ -3881,6 +3943,10 @@ video {
 
   .sm\:w-\[270px\]{
     width: 270px;
+  }
+
+  .sm\:w-\[350px\]{
+    width: 350px;
   }
 
   .sm\:w-\[412px\]{
@@ -4179,6 +4245,10 @@ video {
     font-size: 21px;
   }
 
+  .sm\:text-\[24px\]{
+    font-size: 24px;
+  }
+
   .sm\:text-\[34px\]{
     font-size: 34px;
   }
@@ -4204,6 +4274,10 @@ video {
   .sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .sm\:text-\[23px\]{
+    font-size: 23px;
   }
 
   .sm\:font-semibold{

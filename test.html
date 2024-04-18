@@ -4,23 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Call Earnings</title>
-  <link rel="stylesheet" href="./dist/output.css">
+  <title>Community subscription</title>
+  <link href="./dist/output.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-<!-- Style made my Toybur -->
-<style>
-  .active_option_by_toybur {
-    background: linear-gradient(180deg,
-        #ff6535 0%,
-        #ff9e48 48.9%,
-        #ffce58 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    border-bottom: 3px solid orange;
-  }
-</style>
 
-<body>
+<body class="font-primary">
   <section class="mb-24 sm:mb-0">
     <nav class="hidden sm:flex items-center justify-center h-[96px] w-full bg-gradient px-5 lg:px-[72px]">
       <div
@@ -43,19 +32,15 @@
       </div>
     </nav>
     <div class='sm:mx-auto sm:w-full sm:max-w-[1296px] sm:px-5'>
-      <div class="lg:grid grid-cols-3 gap-4 sm:min-h-[85vh] sm:py-[55px] justify-center">
-        <div>
-          <!-- header background section -->
+      <div class="lg:grid grid-cols-5 gap-4 sm:min-h-[85vh] sm:py-[55px] justify-center">
+        <div class="col-span-2">
           <div class="sm:hidden bg-contain bg-cover bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full"
             style="background-image: url('./img/background-2.png')">
             <div class="flex justify-center items-center pt-[52px]">
               <img class="w-[189px]" src="img/logo.png" alt="logo" />
             </div>
           </div>
-          <div class='w-10/12 mx-auto mb-4'>
-            <p class='sm:hidden text-left text-[24px] text-[#585858] font-bold'>Earnings</p>
-          </div>
-          <div class='w-10/12 sm:w-full mx-auto'>
+          <div class="hidden sm:block w-10/12 mx-auto mb-10">
             <div
               class="relative flex justify-center rounded-[25px] w-full py-8  sm:py-20 shadow-md bg-gradient items-center px-8 text-white gap-4 mb-1 overflow-hidden">
               <svg xmlns="http://www.w3.org/2000/svg"
@@ -72,149 +57,96 @@
               </svg>
 
               <div class=' flex flex-col items-center font-primary'>
-                <p class='sm:hidden text-white text-[24px] font-semibold'>Calls</p>
-                <p class='hidden sm:block text-white text-[34px] font-semibold'>Earning</p>
-                <p class='text-white text-[48px] sm:text-[68px] font-bold'>$230</p>
-                <p class='text-white text-[12px] sm:text-[17px] mt-[-10px] font-medium'>Earned this month</p>
+                <p class='hidden sm:block text-white text-[34px] font-semibold'>Premium</p>
+                <p class='text-white text-[48px] sm:text-[68px] font-bold'>₹ 230</p>
+                <p class='text-white text-[12px] text-[24px] mt-[-10px] font-medium'>Per Month</p>
               </div>
-            </div>
-            <div class='flex flex-row sm:flex-col justify-between items-center gap-1 align-middle'>
-              <button
-                class=' bg-gradient w-1/2 sm:w-full flex flex-row items-center justify-center mt-2 sm:mt-6 focus:outline-none  h-[48px] gap-2 text-white px-auto py-2 rounded-full'>
-                <img src="./img/mail.png" class='order-first items-center pointer-events-none w-[30px] h-[28px]' />
-                <p class='text-base sm:text-[20px]'>Email Report</p>
-              </button>
-              <div class='flex flex-col gap-1 w-1/2 sm:w-full self-center sm:mt-6'>
-                <label htmlFor='dateRange' class='text-xs text-gradient sm:text-[20px] sm:mb-4'>Upcoming Payment
-                  Date:</label>
-
-                <input type="text" name="" id="dateRange"
-                  class='border border-gray-400 sm:text-center text-sm sm:text-[17px] rounded-full p-2 sm:p-4' defaultValue="15/05/24"
-                  placeholder="15/05/24" readOnly />
-              </div>
-            </div>
-            <div class="flex sm:w-full items-center justify-center mt-2 sm:mt-6">
-              <button
-                class="sm:w-full bg-white shadow-md text-gradient sm:text-[20px] font-semibold px-4 py-2 sm:px-4 sm:py-4 rounded-full border border-orange-400">Add/
-                update your payment details</button>
             </div>
           </div>
         </div>
-        <div class="col-span-2">
-          <div class="hidden sm:flex items-center gap-10 justify-center mt-8 lg:mt-0 mb-10">
-            <div class="w-fit text-[23px] font-bold active_option_by_toybur">
-              <p>Calls</p>
+        <div class="flex items-center justify-center sm:items-start col-span-3">
+          <div class="overflow-y-auto flex flex-col items-center justify-center mx-2 gap-2 w-full"
+            style="max-height: calc(100vh - 280px);">
+            <span class="text-center text-[#585858] font-medium sm:font-semibold text-[24px] sm:text-[34px]">
+              Subscription Types
+            </span>
+            <div class="flex flex-row items-center justify-around w-full mt-1">
+              <img src="./img/chevron-left.png" alt="" class="w-[13px] h-[12px] sm:hidden">
+              <span class="text-gradient text-[40px] font-bold">
+                Premium
+              </span>
+              <img src="./img/chevron-right.png" alt="" class="w-[13px] h-[12px] sm:hidden">
             </div>
-            <div class="w-fit pb-2 text-[23px] font-bold text-[#B8B8B8]">
-              <p>Conferences</p>
+            <span class="text-[#585858] font-medium text-[18px]">
+              Community Subscription Details
+            </span>
+
+            <!-- benefits -->
+            <div class="flex flex-col gap-2 w-full sm:grid grid-cols-2 gap-4 sm:mt-5">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between px-4 rounded-3xl drop-shadow-md bg-white py-2">
+                  <div class="flex gap-2">
+                    <img src="./img/price.png" alt="">
+                    <span class="text-[14px] text-[#afafaf] font-semibold">Monthly Charge</span>
+                  </div>
+
+                  <div class="flex flex-col items-center self-end">
+                    <span class="text-[14px] text-gradient font-semibold">₹ 499</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between px-4 rounded-3xl drop-shadow-md bg-white py-2">
+                  <div class="flex gap-2">
+                    <img src="./img/percent.png" alt="">
+                    <span class="text-[14px] text-[#afafaf] font-semibold">Early Discount</span>
+                  </div>
+
+                  <div class="flex flex-col items-center self-end">
+                    <span class="text-[14px] text-gradient font-semibold">50%</span>
+                    <span class="text-[12px] text-[#afafaf] font-medium">₹ 499 * 6 months</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between px-4 rounded-3xl drop-shadow-md bg-white py-2">
+                  <div class="flex gap-2">
+                    <img src="./img/clock.png" alt="">
+                    <span class="text-[14px] text-[#afafaf] font-semibold">Valid Till</span>
+                  </div>
+
+                  <div class="flex flex-col items-center self-end">
+                    <span class="text-[14px] text-gradient font-semibold">365 Days</span>
+                    <span class="text-[12px] text-[#afafaf] font-medium">From Subscription Date</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
+                  <img src="./img/check.png" alt="">
+                  <span class="text-[#585858] font-medium text-[14px]">Unlimited calls with students</span>
+                </div>
+                <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
+                  <img src="./img/check.png" alt="">
+                  <span class="text-[#585858] font-medium text-[14px]">Unlimited conferences</span>
+                </div>
+                <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
+                  <img src="./img/check.png" alt="">
+                  <span class="text-[#585858] font-medium text-[14px]">Get Your Referral Code</span>
+                </div>
+                <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
+                  <img src="./img/check.png" alt="">
+                  <span class="text-[#585858] font-medium text-[14px]">Share your referral code and get credits</span>
+                </div>
+                
+              </div>
             </div>
-            <div class="w-fit pb-2 text-[23px] font-bold text-[#B8B8B8]">
-              <p>Referrals</p>
-            </div>
-          </div>
-          <div
-            class='overflow-y-auto mt-8 sm:mt-0 rounded-[50px] py-2 w-screen sm:w-auto max-h-[500px] sm:max-h-[80vh]'>
-            <div class='flex flex-col gap-2  items-center'>
-              <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
-                  <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
-                  <div class='flex flex-col'>
-                    <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                    <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
-                  </div>
-                </div>
-                <div>
-                  <p class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>$50</p>
-                </div>
-              </div>
-              <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
-                  <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
-                  <div class='flex flex-col'>
-                    <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                    <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
-                  </div>
-                </div>
-                <div>
-                  <p class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>$50</p>
-                </div>
-              </div>
-              <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
-                  <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
-                  <div class='flex flex-col'>
-                    <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                    <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
-                  </div>
-                </div>
-                <div>
-                  <p class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>$50</p>
-                </div>
-              </div>
-              <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
-                  <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
-                  <div class='flex flex-col'>
-                    <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                    <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
-                  </div>
-                </div>
-                <div>
-                  <p class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>$50</p>
-                </div>
-              </div>
-              <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
-                  <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
-                  <div class='flex flex-col'>
-                    <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                    <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
-                  </div>
-                </div>
-                <div>
-                  <p class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>$50</p>
-                </div>
-              </div>
-              <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
-                  <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
-                  <div class='flex flex-col'>
-                    <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                    <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
-                  </div>
-                </div>
-                <div>
-                  <p class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>$50</p>
-                </div>
-              </div>
-              <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
-                  <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
-                  <div class='flex flex-col'>
-                    <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                    <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
-                  </div>
-                </div>
-                <div>
-                  <p class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>$50</p>
-                </div>
-              </div>
-              <div class='flex flex-row p-2 justify-between items-center bg-white w-10/12 rounded-xl shadow-md'>
-                <div class='flex items-center flex-row gap-4 sm:px-4 sm:py-2'>
-                  <img src="./img/data.png" alt="" class='h-10 w-8 sm:h-[50px] sm:w-[42px]' />
-                  <div class='flex flex-col'>
-                    <p class='text-[14px] md:text-[24px] font-semibold text-gray-400'>Student Name/ Call Title</p>
-                    <p class='text-[11px] sm:text-lg text-gray-400'>2024-04-04</p>
-                  </div>
-                </div>
-                <div>
-                  <p class='sm:w-[152px] text-center bg-gradient rounded-xl p-2 sm:py-5 sm:text-lg text-white'>$50</p>
-                </div>
+            <div class="flex items-center justify-center mt-5">
+              <div class="flex items-center gap-2 justify-center px-2 sm:px-5 py-2 rounded-full bg-gradient text-white">
+                <img src="./img/tick.png" alt="">
+                <span class="text-lg">Subscribe</span>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   </section>
   <!-- menu component -->
   <div class="sm:hidden fixed left-0 right-0 bottom-0 z-50 flex justify-center w-10/12 mx-auto">

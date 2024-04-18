@@ -4,115 +4,161 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Premium subscription</title>
+  <title>Community subscription</title>
   <link href="./dist/output.css" rel="stylesheet" />
   <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body class="font-primary">
-  <section>
-    <div class="flex items-center justify-center">
-      <div class="bg-cover bg-center bg-no-repeat w-screen h-[280px] min-w-screen fixed top-0"
-        style="background-image: url('./img/background-2.png')">
-        <div class="flex justify-center items-center pt-[48px]">
-          <img src="./img/logo.png" alt="logo" class="" />
+  <section class="mb-24 sm:mb-0">
+    <nav class="hidden sm:flex items-center justify-center h-[96px] w-full bg-gradient px-5 lg:px-[72px]">
+      <div
+        class="w-full max-w-[1300px] mx-auto sm:flex flex-wrap md:gap-10 items-center justify-center xl:justify-between">
+        <div class="hidden xl:block">
+          <img class="w-[308px]" src="img/logo.png" alt="logo" />
+        </div>
+        <div class="flex items-center justify-center gap-8">
+          <img src="img/desktop_nav_search.png" alt="" />
+          <img src="img/desktop_nav_calender.png" alt="" />
+          <img src="img/desktop_nav_money.png" alt="" />
+          <img src="img/desktop_nav_files.png" alt="" />
+          <img src="img/desktop_nav_schedule.png" alt="" />
+          <img src="img/desktip_nav_chat.png" alt="" />
+          <img src="img/desktop_nav_group.png" alt="" />
+          <img src="img/desktop_nav_profile.png" alt="" />
+          <img src="img/desktop_nav_notificaiton.png" alt="" />
+          <img src="img/desktop_nav_exit.png" alt="" />
         </div>
       </div>
-      <div class="overflow-y-auto flex flex-col mt-[200px] items-center justify-center mx-2 gap-2 w-full" style="max-height: calc(100vh - 280px);">
-        <span class="text-center text-[#585858] font-medium mt-[240px] text-[20px]">
-          Subscription Types
-        </span>
-        <div class="flex flex-row items-center justify-around w-full mt-1">
-          <img src="./img/chevron-left.png" alt="" class="w-[13px] h-[12px]">
-          <span class="text-gradient text-2xl font-semibold">
-            Premium
-          </span>
-          <img src="./img/chevron-right.png" alt="" class="w-[13px] h-[12px]">
-        </div>
-        <span class="text-[#585858] font-medium text-[14px]">
-          Premium Subscription Details
-        </span>
-        <!-- joining fee -->
-        <div class="flex flex-col gap-2 w-full">
-          <div class="flex items-center justify-between px-4 rounded-3xl drop-shadow-md bg-white py-2">
-            <div class="flex gap-2">
-              <img src="./img/price.png" alt="">
-              <span class="text-[14px] text-[#afafaf] font-semibold">Monthly Charge</span>
-            </div>
-            
-            <div class="flex flex-col items-center self-end">
-              <span class="text-[14px] text-gradient font-semibold">₹ 499</span>
-              
+    </nav>
+    <div class='sm:mx-auto sm:w-full sm:max-w-[1296px] sm:px-5'>
+      <div class="lg:grid grid-cols-5 gap-4 sm:min-h-[85vh] sm:py-[55px] justify-center">
+        <div class="col-span-2">
+          <div class="sm:hidden bg-contain bg-cover bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full"
+            style="background-image: url('./img/background-2.png')">
+            <div class="flex justify-center items-center pt-[52px]">
+              <img class="w-[189px]" src="img/logo.png" alt="logo" />
             </div>
           </div>
-          <div class="flex items-center justify-around rounded-3xl drop-shadow-md bg-white py-2">
-            <div class="flex gap-2">
-              <img src="./img/percent.png" alt="">
-              <span class="text-[14px] text-[#afafaf] font-semibold">Early Discount</span>
-            </div>
-            
-            <div class="flex flex-col items-center self-end">
-              <span class="text-[14px] text-gradient font-semibold">50%</span>
-              <span class="text-[12px] text-[#afafaf] font-medium">₹ 499 * 6 months</span>
-            </div>
-          </div>
-          <div class="flex items-center justify-around rounded-3xl drop-shadow-md bg-white py-2">
-            <div class="flex gap-2">
-              <img src="./img/clock.png" alt="">
-              <span class="text-[14px] text-[#afafaf] font-semibold">Valid Till</span>
-            </div>
-            
-            <div class="flex flex-col items-center self-end">
-              <span class="text-[14px] text-gradient font-semibold">365 Days</span>
-              <span class="text-[12px] text-[#afafaf] font-medium">From Subscription Date</span>
+          <div class="hidden sm:block w-10/12 mx-auto mb-10">
+            <div
+              class="relative flex justify-center rounded-[25px] w-full py-8  sm:py-20 shadow-md bg-gradient items-center px-8 text-white gap-4 mb-1 overflow-hidden">
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute left-6 top-1/2 transform -translate-y-1/2 cursor-pointer fill-white  " height="20"
+                width="12.5" viewBox="0 0 320 512">
+                <path fill="#ffffff"
+                  d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l192 192c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 246.6 86.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-192 192z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg"
+                class="absolute right-6 fill-white top-1/2 transform -translate-y-1/2 cursor-pointer" height="20"
+                width="12.5" viewBox="0 0 320 512">
+                <path fill="#ffffff"
+                  d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z" />
+              </svg>
+
+              <div class=' flex flex-col items-center font-primary'>
+                <p class='hidden sm:block text-white text-[34px] font-semibold'>Premium</p>
+                <p class='text-white text-[48px] sm:text-[68px] font-bold'>₹ 230</p>
+                <p class='text-white text-[12px] text-[24px] mt-[-10px] font-medium'>Per Month</p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- benefits -->
-        <div class="flex flex-col gap-2 w-full">
-          <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
-            <img src="./img/check.png" alt="">
-            <span class="text-[#585858] font-medium text-[14px]">Unlimited calls with students</span>
-          </div>
-          <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
-            <img src="./img/check.png" alt="">
-            <span class="text-[#585858] font-medium text-[14px]">Unlimited conferences</span>
-          </div>
-          <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
-            <img src="./img/check.png" alt="">
-            <span class="text-[#585858] font-medium text-[14px]">Get your referral rode</span>
-          </div>
-          <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
-            <img src="./img/check.png" alt="">
-            <span class="text-[#585858] font-medium text-[14px]">Share your referral code and get credits</span>
+        <div class="flex items-center justify-center sm:items-start col-span-3">
+          <div class="overflow-y-auto flex flex-col items-center justify-center mx-2 gap-2 w-full"
+            style="max-height: calc(100vh - 280px);">
+            <span class="text-center text-[#585858] font-medium sm:font-semibold text-[24px] sm:text-[34px]">
+              Subscription Types
+            </span>
+            <div class="flex flex-row items-center justify-around w-full mt-1">
+              <img src="./img/chevron-left.png" alt="" class="w-[13px] h-[12px] sm:hidden">
+              <span class="text-gradient text-[40px] font-bold">
+                Premium
+              </span>
+              <img src="./img/chevron-right.png" alt="" class="w-[13px] h-[12px] sm:hidden">
+            </div>
+            <span class="text-[#585858] font-medium text-[18px]">
+              Community Subscription Details
+            </span>
+
+            <!-- benefits -->
+            <div class="flex flex-col gap-2 w-full sm:grid grid-cols-2 gap-4 sm:mt-5">
+              <div class="flex flex-col gap-3">
+                <div class="flex items-center justify-between px-4 rounded-3xl drop-shadow-md bg-white py-2">
+                  <div class="flex gap-2">
+                    <img src="./img/price.png" alt="">
+                    <span class="text-[14px] text-[#afafaf] font-semibold">Monthly Charge</span>
+                  </div>
+
+                  <div class="flex flex-col items-center self-end">
+                    <span class="text-[14px] text-gradient font-semibold">₹ 499</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between px-4 rounded-3xl drop-shadow-md bg-white py-2">
+                  <div class="flex gap-2">
+                    <img src="./img/percent.png" alt="">
+                    <span class="text-[14px] text-[#afafaf] font-semibold">Early Discount</span>
+                  </div>
+
+                  <div class="flex flex-col items-center self-end">
+                    <span class="text-[14px] text-gradient font-semibold">50%</span>
+                    <span class="text-[12px] text-[#afafaf] font-medium">₹ 499 * 6 months</span>
+                  </div>
+                </div>
+                <div class="flex items-center justify-between px-4 rounded-3xl drop-shadow-md bg-white py-2">
+                  <div class="flex gap-2">
+                    <img src="./img/clock.png" alt="">
+                    <span class="text-[14px] text-[#afafaf] font-semibold">Valid Till</span>
+                  </div>
+
+                  <div class="flex flex-col items-center self-end">
+                    <span class="text-[14px] text-gradient font-semibold">365 Days</span>
+                    <span class="text-[12px] text-[#afafaf] font-medium">From Subscription Date</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col gap-3">
+                <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
+                  <img src="./img/check.png" alt="">
+                  <span class="text-[#585858] font-medium text-[14px]">Unlimited calls with students</span>
+                </div>
+                <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
+                  <img src="./img/check.png" alt="">
+                  <span class="text-[#585858] font-medium text-[14px]">Unlimited conferences</span>
+                </div>
+                <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
+                  <img src="./img/check.png" alt="">
+                  <span class="text-[#585858] font-medium text-[14px]">Get Your Referral Code</span>
+                </div>
+                <div class="flex justify-start w-full items-center gap-2 rounded-3xl drop-shadow-md bg-white px-4 py-2">
+                  <img src="./img/check.png" alt="">
+                  <span class="text-[#585858] font-medium text-[14px]">Share your referral code and get credits</span>
+                </div>
+
+              </div>
+            </div>
+            <div class="flex items-center justify-center mt-5">
+              <div class="flex items-center gap-2 justify-center px-2 sm:px-5 py-2 rounded-full bg-gradient text-white">
+                <img src="./img/tick.png" alt="">
+                <span class="text-lg">Subscribe</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col gap-2 items-center justify-center">
-          <div class="flex items-center gap-2 justify-center px-2 py-2 rounded-full bg-gradient text-white">
-            <img src="./img/tick.png" alt="">
-            <span>Subscribe </span>
-          </div>
-        </div>
-      </div>
-      <div style="
-              background: linear-gradient(
-                180deg,
-                #ff6535 0%,
-                #ff9e48 48.9%,
-                #ffce58 100%
-              );
-              position: fixed;
-              bottom: 0;
-            "
-        class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-10/12 h-[64px] mb-3">
-        <img src="./img/search.png" alt="" />
-        <img src="./img/cal.png" alt="" />
-        <img src="./img/chat-inactive.png" alt="" />
-        <img src="./img/4.png" alt="" />
-        <img src="./img/doti.png" />
       </div>
     </div>
   </section>
+  <!-- menu component -->
+  <div class="sm:hidden fixed left-0 right-0 bottom-0 z-50 flex justify-center w-10/12 mx-auto">
+    <div
+      class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-full h-[64px] mb-3 bg-gradient">
+      <img src="./img/4.png" alt="">
+      <img src="./img/dis.png" alt="" />
+      <img src="./img/2.png" />
+      <img src="./img/ab.png" />
+      <img src="./img/doti.png" />
+    </div>
+  </div>
 </body>
 
 </html>

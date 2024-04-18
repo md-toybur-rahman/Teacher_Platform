@@ -28,4 +28,6 @@ The back button on book-call, bookConference, conferenceDetails redirects back t
 6. I also changed full structure and made some new line of code in callEarning, conferenceEarning and referralsEarning page. all of 3 pages codes are same the difference is title name of card and activation of menu. I used a class for show it as active. new code line is 107-119.
 (This note for all of 3 pages of callEarning, conferenceEarning and referralsEarning.) if anything will need to change.let me know.
 
+7. In Create conference page i had to deleted your datepicker div. because that was unnecessary. I made a new div and arranged it in line no 331-344. Hope you like it. I created one more extra share button for desktop responsive purpose. Desktop share button in line no 308-312 and mobile share button in line no 389-393. Also i had to created a div for "Set Reminder" in line no 348-351. This part was not in mobile design. But its available in desktop design.So i thought that was a mistake of design. then kept it for both design. if you don't want it for mobile then use this class ("hidden sm:flex items-center justify-between px-5 py-2 shadow-lg rounded-full w-full sm:w-1/2") replace current classes (all classes).
+
  -->

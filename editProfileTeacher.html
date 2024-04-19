@@ -2,347 +2,416 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Profile</title>
-  <link href="./dist/output.css" rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link href="./dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
 </head>
 
 <body class="font-primary">
-  <section>
-    <div>
-      <!-- header background section -->
-      <div class="bg-cover bg-center bg-no-repeat w-screen h-[280px] min-w-screen fixed top-0"
-        style="background-image: url('./img/background-2.png')">
-        <div class="flex justify-center items-center pt-[48px]">
-          <img src="./img/logo.png" alt="logo" class="" />
+  <section class="mb-20 sm:mb-0">
+    <nav class="hidden sm:flex items-center justify-center h-[96px] w-full bg-gradient px-5 lg:px-[72px]">
+      <div
+        class="w-full max-w-[1300px] mx-auto sm:flex flex-wrap md:gap-10 items-center justify-center xl:justify-between">
+        <div class="hidden xl:block">
+          <img class="w-[308px]" src="img/logo.png" alt="logo" />
+        </div>
+        <div class="flex items-center justify-center gap-6 md:gap-8">
+          <img src="img/desktop_nav_search.png" alt="" />
+          <img src="img/desktop_nav_calender.png" alt="" />
+          <img src="img/desktop_nav_money.png" alt="" />
+          <img src="img/desktop_nav_files.png" alt="" />
+          <img src="img/desktop_nav_schedule.png" alt="" />
+          <img src="img/desktip_nav_chat.png" alt="" />
+          <img src="img/desktop_nav_group.png" alt="" />
+          <img src="img/desktop_nav_profile.png" alt="" />
+          <img src="img/desktop_nav_notificaiton.png" alt="" />
+          <img src="img/desktop_nav_exit.png" alt="" />
         </div>
       </div>
-      <div class="flex flex-col items-center mt-80 sm:mx-auto sm:w-full sm:max-w-[480px]">
-        <!-- component -->
-        <div class="mt-[-130px] flex flex-col w-full">
-          <div class="fixed right-0 left-0 w-full">
-            <div class="flex flex-col justify-center items-center">
-              <img src="./img/Vector (1).png" alt="" />
-              <h1 class="font-semibold text-2xl text-[#585858]">Name</h1>
-              <p class="text-[#afafaf] text-sm font-normal">Teacher</p>
-            </div>
-            <div class="flex items-center justify-center px-[15px] mt-4 pb-[20px] shadow-md rounded-b-full">
-              <a href="#personal" class="shadow-md text-white py-2 px-4 rounded-full mr-3 bg-gradient btn-toggle active"
-                onclick="toggleForm('personal',this)">
-                Personal Details
-              </a>
-              <a href="#profession" class="shadow-md text-white py-2 px-4 rounded-full mr-3 bg-gradient btn-toggle"
-                onclick="toggleForm('profession',this)">
-                Profession
-              </a>
-            </div>
-          </div>
-          <div class="overflow-y-auto mt-[200px] grid grid-cols-1 gap-x-2 gap-y-4 sm:grid-cols-6 px-2"
-            style="max-height: calc(100vh - 500px)">
-            <div class="personal" id="personal">
-              <div class="mt-2 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6 px-2">
-                <div class="sm:col-span-6">
-                  <label for="full-name" class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Full Name
-                    *</label>
-                  <div class="mt-2">
-                    <input type="text" name="fullName" autocomplete="given-name"
-                      class="block w-full rounded-m border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="" />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6">
-                  <div class="flex justify-between">
-                    <label for="email" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">Email address
-                      *</label>
-                    <div class="flex text-gradient text-[14px] font-semibold">
-                      <a href="" class="mr-2">Verify now</a>
-                    </div>
-                  </div>
-                  <div class="mt-2">
-                    <input name="email" type="email" disabled autocomplete="email" placeholder="xyz@email.com"
-                      class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="" />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6">
-                  <div class="flex items-center justify-between flex-col min-[375px]:flex-row">
-                    <div class="sm:col-span-3 w-[100%] sm:w-[50%] mr-2">
-                      <label for="country" class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Country
-                        *</label>
-                      <div class="mt-2 relative">
-                        <input name="country" type="text" autocomplete="country-name" list="countries"
-                          class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                          value="" />
-                        <datalist id="countries"></datalist>
-                      </div>
-                    </div>
-                    <div class="sm:col-span-3 w-[100%] sm:w-[50%]">
-                      <label for="city" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">City</label>
-                      <div class="mt-2 relative">
-                        <input name="city" type="text" list="cities" autocomplete="city-name"
-                          class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                          value="" />
-                        <datalist id="cities"></datalist>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6">
-                  <label for="linkedin_profile" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">LinkedIn
-                    profile *</label>
-                  <div class="mt-2">
-                    <input name="linkedin_profile" type="url" autocomplete="url"
-                      class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="" />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6">
-                  <label for="time_zone" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">Time Zone
-                    *</label>
-                  <div class="mt-2 relative">
-                    <select name="time_zone"
-                      class="w-full appearance-none border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="">
-                      <option value="">Select Time Zone</option>
-                    </select>
-                    <img src="arrowIcon.svg" alt="" class="absolute top-[18px] right-[18px]" />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6 mb-1">
-                  <label for="about" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">About *</label>
-                  <div class="mt-2">
-                    <textarea name="about"
-                      class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"></textarea>
-                  </div>
-                </div>
-              </div>
-
-              <hr class="h-px mb-1 mx-[15px] border-0 dark:bg-gray-700 opacity-25" />
-
-              <div class="flex items-center justify-center mb-1">
-                <a href=""
-                  class="flex shadow-md text-white py-2 px-3 rounded-full items-center justify-center mr-2 bg-gradient">
-                  <img src="./img/block.png" alt="" class="mr-2" />
-                  <span class="text-[11px]">Change Password</span>
-                </a>
-                <div class="relative flex w-[160px]">
-                  <input class="w-[100px] ml-3 mt-1" type="file" accept="image/*" id="file_input" name="profilePic" />
-                  <button
-                    class="absolute flex shadow-md text-white py-2 px-3 rounded-full items-center justify-center bg-gradient">
-                    <img src="./img/upload.png" alt="" class="mr-2" />
-                    <span class="text-[11px]">Upload Profile Picture</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="profession hidden" id="profession">
-              <form class="mt-2 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6 px-4">
-                <div class="sm:col-span-6">
-                  <label for="full-name" class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Institute
-                    associated with *</label>
-                  <div class="mt-2">
-                    <input type="text" name="institute" autocomplete="institute"
-                      class="block w-full rounded-m border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="" />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6 text-sm">
-                  <label for="category" class="block font-semibold leading-6 text-gradient pl-4">Expert in
-                    Category</label>
-
-                  <div class="flex flex-col sm:flex-row justify-between">
-                    <div class="w-full sm:w-1/2 mt-2 relative mr-4">
-                      <select type="text" name="category" default="Select a category"
-                        class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-4 py-3 appearance-none"
-                        value="">
-                        <option value="" selected disabled>
-                          Select a course
-                        </option>
-                        <!-- Categories options here -->
-                        <option value="Preschool">
-                          Preschool/Kindergarten
-                        </option>
-                        <option value="Middle School">Middle School</option>
-                        <option value="High School">High School</option>
-                        <option value="Vocational Trainings/ Job Oriented Training">
-                          Vocational Trainings/ Job Oriented Training
-                        </option>
-                        <option value="Bachelor's Degree">
-                          Bachelor's Degree
-                        </option>
-                      </select>
-                      <img src="./img/Vectoryy.png" alt="" class="absolute top-[18px] right-[18px]" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6 text-sm">
-                  <div class="font-semibold leading-6 text-gradient pl-4">
-                    Select subcategories you are expert in
-                  </div>
-                  <div class="px-3 flex flex-wrap items-center gap-1">
-                    <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked name="option1" />
-                      <span class="ml-1 text-gray-700">Option 1</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked name="option2" />
-                      <span class="ml-1 text-gray-700">Option 2</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked name="option3" />
-                      <span class="ml-1 text-gray-700">Option 3</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked name="option4" />
-                      <span class="ml-1 text-gray-700">Option 4</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked name="option5" />
-                      <span class="ml-1 text-gray-700">Option 5</span>
-                    </label>
-                    <label class="inline-flex items-center">
-                      <input type="checkbox" class="form-checkbox h-4 w-4 text-indigo-600" checked name="option6" />
-                      <span class="ml-1 text-gray-700">Option 6</span>
-                    </label>
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6">
-                  <label for="full-name" class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Instagram
-                    Profile</label>
-                  <div class="mt-2">
-                    <input type="text" name="institute" autocomplete="institute"
-                      class="block w-full rounded-m border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="" />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6">
-                  <label for="full-name" class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Facebook
-                    Profile</label>
-                  <div class="mt-2">
-                    <input type="text" name="institute" autocomplete="institute"
-                      class="block w-full rounded-m border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="" />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6">
-                  <label for="full-name" class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">X
-                    profile</label>
-                  <div class="mt-2">
-                    <input type="text" name="institute" autocomplete="institute"
-                      class="block w-full rounded-m border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="" />
-                  </div>
-                </div>
-
-                <div class="sm:col-span-6">
-                  <label for="full-name" class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Personal
-                    Website</label>
-                  <div class="mt-2">
-                    <input type="text" name="institute" autocomplete="institute"
-                      class="block w-full rounded-m border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
-                      value="" />
-                  </div>
-                </div>
-
-
-                <div class="sm:col-span-6 text-sm">
-                  <label htmlFor="languages" class="block font-semibold leading-6 text-gradient pl-[14px]">Languages
-                    Known *
-                  </label>
-                  <div class="mt-2 relative w-[100%]">
-                    <select id="languages" name="languages" type="languages"
-                      class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px] appearance-none">
-                      <option selected disabled value="">
-                        Select a language
-                      </option>
-                      <option value="English">English</option>
-                      <option value="German">German</option>
-                      <option value="Spanish">Spanish</option>
-                      <option value="French">French</option>
-                      <option value="Hindi">Hindi</option>
-                    </select>
-
-                    <img src="./img/Vectoryy.png" alt="" class="absolute top-[18px] right-[18px]" />
-                  </div>
-                  <div id="selected_languages" class="mt-2 flex flex-wrap">
-                    <div>
-                      <div class="flex cursor-pointer flex-wrap">
-                        <div class="flex items-center rounded-full bg-gradient text-white py-1 px-2 text-xs mb-2 mr-2">
-                          <span class="mr-2">Language</span>
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                              d="M6 18L18 6M6 6l12 12" />
-                          </svg>
-                        </div>
-
-                        <div
-                          class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2 mr-2">
-                          <span class="mr-2">Conversational</span>
-                          <input type="radio" checked />
-                        </div>
-
-                        <div
-                          class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2 mr-2">
-                          <span class="mr-2">Fluent</span>
-                          <input type="radio" checked />
-                        </div>
-
-                        <div
-                          class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2">
-                          <span class="mr-2">Native</span>
-                          <input type="radio" checked />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="flex items-center justify-center mb-8">
-                  <button
-                    class="flex shadow-md text-white py-2 px-3 rounded-full items-center justify-center mr-2 bg-gradient">
-                    <span class="mr-2"><img src="./img/tick.png" /></span>
-                    <span class="text-xs">Save and Subscribe</span>
-                  </button>
-                </div>
-              </form>
-            </div>
+    </nav>
+    <div class='sm:mx-auto sm:w-full sm:max-w-[1296px] sm:px-5'>
+      <div>
+        <!-- header background section -->
+        <div class="sm:hidden bg-contain bg-cover bg-no-repeat w-full h-[280px] sm:mx-auto sm:w-full sm:max-w-md"
+          style="background-image: url('./img/background-2.png')">
+          <div class="flex justify-center items-center pt-[52px]">
+            <img class="w-[189px]" src="img/logo.png" alt="logo" />
           </div>
         </div>
-        <!-- menu bottom -->
-        <div class="bg-white"></div>
-        <div style="
-              background: linear-gradient(
-                180deg,
-                #ff6535 0%,
-                #ff9e48 48.9%,
-                #ffce58 100%
-              );
-              position: fixed;
-              bottom: 0;
-            "
-          class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-10/12 h-[64px] mb-3">
-          <img src="./img/search.png" alt="" />
-          <img src="./img/cal.png" alt="" />
-          <img src="./img/chat-inactive.png" alt="" />
-          <img src="./img/4.png" alt="" />
-          <img src="./img/doti.png" />
+        <div class="flex flex-col items-center mt-16 sm:mt-0 sm:px-5 w-full">
+          <!-- component -->
+          <div
+            class="mt-[-130px] sm:mt-10 flex flex-col w-full md:grid grid-cols-3 gap-10 sm:min-h-[85vh] sm:py-[55px] justify-center">
+            <div class="w-full mx-auto h-fit p-[15px] sm:p-9 shadow-md rounded-[25px] sm:border border-orange-500">
+              <div class="flex flex-col justify-center items-center ">
+                <img src="img/Vector (1).png" alt="" />
+                <h1 class="font-semibold text-2xl text-[#585858]">Name</h1>
+                <p class="text-[#afafaf] text-sm font-normal">Teacher</p>
+              </div>
+              <div class="flex flex-wrap sm:flex-col gap-4 items-center justify-center mt-4">
+                <a href="#personal" class="shadow-md sm:w-full text-center py-2 px-4 rounded-full btn-toggle active"
+                  onclick="toggleForm('personal',this)">
+                  Personal Details
+                </a>
+                <a href="#profession" class="shadow-md sm:w-full text-center py-2 px-4 rounded-full btn-toggle inactive"
+                  onclick="toggleForm('profession',this)">
+                  Profession
+                </a>
+
+              </div>
+            </div>
+            <div
+              class="col-span-2 overflow-y-auto grid grid-cols-1 gap-x-2 gap-y-4 p-2 sm:p-5 sm:shadow-md h-fit rounded-[25px]">
+              <h1 class="hidden sm:block text-gradient font-semibold text-xl">Edit Profile</h1>
+              <div class="personal" id="personal">
+                <div class="mt-2 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6 px-2">
+                  <div class="sm:col-span-6">
+                    <label for="full-name" class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Full
+                      Name
+                      *</label>
+                    <div class="mt-2">
+                      <input type="text" name="fullName" autoComplete="given-name"
+                        class="block w-full rounded-m border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                        value="" />
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-6">
+                    <div class="flex justify-between">
+                      <label for="email" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">Email
+                        address *</label>
+                      <div class="flex text-gradient text-[14px] font-semibold">
+                        <a href="" class="mr-2">Verify now</a>
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <input name="email" type="email" disabled autoComplete="email" placeholder="xyz@email.com"
+                        class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                        value="" />
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-6">
+                    <div class="flex items-center justify-between flex-col min-[375px]:flex-row">
+                      <div class="sm:col-span-3 w-[100%] sm:w-[50%] mr-2">
+                        <label for="country"
+                          class="block text-sm font-semibold leading-2 text-gradient pl-[14px]">Country
+                          *</label>
+                        <div class="mt-2 relative">
+                          <input name="country" type="text" autoComplete="country-name" list="countries"
+                            class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                            value="" />
+                          <datalist id="countries"></datalist>
+                        </div>
+                      </div>
+                      <div class="sm:col-span-3 w-[100%] sm:w-[50%]">
+                        <label for="city" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">City</label>
+                        <div class="mt-2 relative">
+                          <input name="city" type="text" list="cities" autoComplete="city-name"
+                            class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                            value="" />
+                          <datalist id="cities"></datalist>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-6">
+                    <label for="linkedin_profile"
+                      class="text-sm font-semibold leading-2 text-gradient pl-[14px]">LinkedIn
+                      profile</label>
+                    <div class="mt-2">
+                      <input name="linkedin_profile" type="url" autoComplete="url"
+                        class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                        value="" />
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-6">
+                    <label for="time_zone" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">Time Zone
+                      *</label>
+                    <div class="mt-2 relative">
+                      <select name="time_zone"
+                        class="w-full appearance-none border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                        value="">
+                        <option value="">Select Time Zone</option>
+                      </select>
+                      <img src="arrowIcon.svg" alt="" class="absolute top-[18px] right-[18px]" />
+                    </div>
+                  </div>
+
+                  <div class="sm:col-span-6 mb-1">
+                    <label for="about" class="text-sm font-semibold leading-2 text-gradient pl-[14px]">About
+                      *</label>
+                    <div class="mt-2">
+                      <textarea name="about"
+                        class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"></textarea>
+                    </div>
+                  </div>
+                </div>
+
+                <hr class="h-px my-4 sm:my-10 mx-[15px] border-0 dark:bg-gray-700 opacity-25" />
+
+                <div
+                  class="flex flex-wrap sm:grid grid-cols-2 gap-5 sm:gap-10 sm:w-8/12 mx-auto sm:mx-none sm:w-full items-center justify-center mb-1">
+                  <a href=""
+                    class="flex w-full shadow-md text-white py-2 px-3 rounded-full items-center justify-center mr-2 bg-gradient">
+                    <img src="img/block.png" alt="" class="mr-2" />
+                    <span class="text-[11px]">Change Password</span>
+                  </a>
+                  <div class="relative flex items-center w-full">
+                    <input class="w-[100px] ml-3 mt-1" type="file" accept="image/*" id="file_input" name="profilePic" />
+                    <button
+                      class="absolute w-full flex shadow-md text-white py-2 px-3 rounded-full items-center justify-center bg-gradient">
+                      <img src="img/upload.png" alt="" class="mr-2" />
+                      <span class="text-[11px]">Upload Profile Picture</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="profession hidden" id="profession">
+                <form class="mt-2 grid grid-cols-1 gap-x-6 gap-y-2 sm:grid-cols-6 sm:px-4">
+                  <div class="col-span-6 text-sm">
+                    <label for="category" class="block font-semibold leading-6 text-gradient">Institude associated
+                      with</label>
+
+                    <div class="flex flex-col sm:flex-row sm:w-full justify-between">
+                      <div class="w-full mt-2 relative mr-4">
+                        <select type="text" name="category" default="Select a category"
+                          class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-4 py-3 appearance-none"
+                          value=""
+                          onChange="setFormData({...formData,category:e.target.value,subCategory:category_data[`${e.target.value}`]})">
+                          <option value="" selected disabled>College/School</option>
+                          <!-- Categories options here -->
+                          <option value="Preschool">Preschool/Kindergarten</option>
+                          <option value="Middle School">Middle School</option>
+                          <option value="High School">High School</option>
+                          <option value="Vocational Trainings/ Job Oriented Training">
+                            Vocational
+                            Trainings/ Job Oriented Training</option>
+                          <option value="Bachelor's Degree">Bachelor's Degree</option>
+                        </select>
+                        <img src="img/Vectoryy.png" alt="" class="absolute top-[18px] right-[18px]" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-span-6 text-sm">
+                    <div class="font-semibold leading-6 text-gradient">Select subcategories you
+                      are
+                      pursuing</div>
+                  </div>
+
+                  <div class="col-span-6 text-sm">
+                    <label for="interest_category" class="block font-semibold leading-6 text-gradient">Expert in
+                      category</label>
+
+                    <div class="flex flex-col sm:flex-row justify-between">
+                      <div class="mt-2 relative w-full mr-4">
+                        <select name="interest_category" autoComplete="category-name"
+                          class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-4 py-3"
+                          value=""
+                          onChange="setFormData({...formData,interest_category:e.target.value,interest_subCategory:category_data[`${e.target.value}`]})">
+                          <option value="" selected disabled>College/School</option>
+                          <!-- Categories options here -->
+                          <option value="Preschool">Preschool/Kindergarten</option>
+                          <option value="Middle School">Middle School</option>
+                          <option value="High School">High School</option>
+                          <option value="Vocational Trainings/ Job Oriented Training">
+                            Vocational
+                            Trainings/ Job Oriented Training</option>
+                          <option value="Bachelor's Degree">Bachelor's Degree</option>
+                        </select>
+                        <img src="img/Vectoryy.png" alt="" class="absolute top-[18px] right-[18px]" />
+                      </div>
+                    </div>
+                  </div>
+                  <!-- sub categoried checkbox will open when any category is selected -->
+                  <div class="col-span-6 text-sm">
+                    <div class="font-semibold leading-6 text-gradient mb-2">Select subcategories you
+                      are
+                      interested in</div>
+                  </div>
+                  <div class="col-span-6 flex flex-col sm:flex-row items-center gap-5">
+                    <div class="text-sm w-full sm:w-1/2">
+                      <label for="interest_category" class="block font-semibold leading-6 text-gradient">Awards and
+                        Certificate (If any)</label>
+
+                      <div class="flex flex-col sm:flex-row justify-between">
+                        <div class="relative w-full">
+                          <select name="interest_category" autoComplete="category-name"
+                            class="appearance-none w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-4 py-3"
+                            value=""
+                            onChange="setFormData({...formData,interest_category:e.target.value,interest_subCategory:category_data[`${e.target.value}`]})">
+                            <option value="" selected disabled>Olive Goe</option>
+                            <!-- Categories options here -->
+                            <option value="Preschool">Preschool/Kindergarten</option>
+                            <option value="Middle School">Middle School</option>
+                            <option value="High School">High School</option>
+                            <option value="Vocational Trainings/ Job Oriented Training">
+                              Vocational
+                              Trainings/ Job Oriented Training</option>
+                            <option value="Bachelor's Degree">Bachelor's Degree</option>
+                          </select>
+                          <img src="img/Vectoryy.png" alt="" class="absolute top-[18px] right-[18px]" />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="relative w-full sm:w-1/2">
+                      <label for="interest_category" class="block font-semibold leading-6 text-gradient">Instagram
+                        Profile</label>
+                      <input type="text" name="country" autoComplete="country-name"
+                        class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                        value="" placeholder='Instagram Profile'>
+
+                    </div>
+                  </div>
+
+                  <div class="col-span-6 text-sm">
+                    <div class="flex flex-col sm:flex-row gap-5 justify-between items-center px-1 mt-4 ">
+                      <div class="relative w-full sm:w-[50%]">
+                        <label for="interest_category" class="block font-semibold leading-6 text-gradient">Facebook
+                          Profile</label>
+                        <input type="text" name="country" autoComplete="country-name"
+                          class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                          value="" placeholder='Facebook Profile'>
+
+                      </div>
+
+                      <div class="mt-2 sm:mt-0 relative w-full sm:w-[50%]">
+                        <label for="interest_category" class="block font-semibold leading-6 text-gradient">X
+                          Profile</label>
+                        <input type="text" list="city" name="city" autoComplete="city-name"
+                          class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                          value="" placeholder='X Profile'>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col-span-6 text-sm">
+                    <div class="flex flex-row gap-5 min-[375px]:flex-row justify-between items-center px-1 mt-4 ">
+                      <div class="relative w-full">
+                        <label for="interest_category" class="block font-semibold leading-6 text-gradient">Personal Website</label>
+                        <input type="text" name="country" autoComplete="country-name"
+                          class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px]"
+                          value="" placeholder='Personal Website'>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-span-6 text-sm mt-2">
+                    <label htmlFor="languages" class="block font-semibold leading-6 text-gradient">Languages
+                      Known *
+                    </label>
+                    <div class="mt-2 relative w-[100%]">
+
+                      <select id="languages" name="languages" type="languages"
+                        class="w-full border border-[#afafaf] text-[#afafaf] text-sm rounded-full px-[15px] py-[10px] appearance-none">
+                        <option selected disabled value="">Select a language</option>
+                        <option value="English">English</option>
+                        <option value="German">German</option>
+                        <option value="Spanish">Spanish</option>
+                        <option value="French">French</option>
+                        <option value="Hindi">Hindi</option>
+                      </select>
+
+                      <img src="img/Vectoryy.png" alt="" class="absolute top-[18px] right-[18px]" />
+                    </div>
+                    <div id="selected_languages" class="mt-5 flex justify-center flex-wrap">
+                      <div>
+                        <div class="flex justify-center cursor-pointer flex-wrap sm:max-w-[514px] sm:mx-auto">
+
+                          <div
+                            class="flex items-center rounded-full bg-gradient text-white py-1 px-2 text-xs mb-2 mr-2">
+                            <span class="mr-2">English</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                              stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                          </div>
+
+                          <div
+                            class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2 mr-2">
+                            <span class="mr-2">Conversational</span>
+                            <input type="radio" checked />
+                          </div>
+
+                          <div
+                            class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2 mr-2">
+                            <span class="mr-2">Fluent</span>
+                            <input type="radio" checked />
+                          </div>
+
+                          <div
+                            class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2">
+                            <span class="mr-2">Native</span>
+                            <input type="radio" checked />
+                          </div>
+                        </div>
+                        <div class="flex justify-center cursor-pointer flex-wrap sm:max-w-[514px] sm:mx-auto">
+
+                          <div
+                            class="flex items-center rounded-full bg-gradient text-white py-1 px-2 text-xs mb-2 mr-2">
+                            <span class="mr-2">Spanish</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+                              stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                          </div>
+
+                          <div
+                            class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2 mr-2">
+                            <span class="mr-2">Conversational</span>
+                            <input type="radio" checked />
+                          </div>
+
+                          <div
+                            class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2 mr-2">
+                            <span class="mr-2">Fluent</span>
+                            <input type="radio" checked />
+                          </div>
+
+                          <div
+                            class="flex rounded-full border border-1 border-orange-400 py-1 px-2 text-orange-400 text-xs mb-2">
+                            <span class="mr-2">Native</span>
+                            <input type="radio" checked />
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="flex col-span-6 items-center justify-center mb-4 mt-5 sm:mt-3">
+                    <button
+                      class="flex shadow-md text-white py-2 px-3 rounded-full items-center justify-center bg-gradient w-full">
+                      <span class="mr-2"><img src="img/tick.png" /></span>
+                      <span class="text-base sm:text-[19px]">Subscribe and Save</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
+  <!-- menu component -->
+  <div class="sm:hidden fixed left-0 right-0 bottom-0 z-50 flex justify-center w-10/12 mx-auto">
+    <div
+      class="flex flex-row justify-between shadow-md items-center px-[32px] rounded-[100px] w-full h-[64px] mb-3 bg-gradient">
+      <img src="img/search-active.png" alt="" />
+      <img src="img/4.png" alt="" />
+      <img src="img/chat-inactive.png" alt="" />
+      <img src="img/dots-inactive.png" />
+    </div>
+  </div>
 
   <script>
     function toggleForm(formId, button) {
@@ -360,22 +429,52 @@
       // Change button style
       const buttons = document.querySelectorAll(".btn-toggle");
       buttons.forEach((btn) => {
-        if (btn !== button) {
+        if (!btn.classList.contains("active")) {
+          btn.classList.remove("inactive");
+          btn.classList.add("active");
+        }
+        else {
           btn.classList.remove("active");
+          btn.classList.add("inactive");
         }
       });
-      button.classList.toggle("active");
     }
   </script>
 
   <style>
     .active {
-      background-color: white;
-      background-image: linear-gradient(to right, #ff6535, #ff9e48, #ffce58);
-      color: transparent;
-      -webkit-background-clip: text;
-      background-clip: text;
-      border: #ff6535 1px solid;
+      background-image: linear-gradient(to bottom, #FF6535, #FF9E48, #FFCE58);
+      color: white;
+    }
+
+    .inactive {
+      border: #FF6535 1px solid;
+      color: #FF6535;
+    }
+
+    input[type=checkbox] {
+      appearance: none;
+      height: 18px;
+      width: 18px;
+      position: relative;
+      border: 1px solid orange;
+      border-radius: 4px;
+    }
+
+    input[type=checkbox]:checked {
+      background-image: linear-gradient(to bottom, #FF6535, #FF9E48, #FFCE58);
+    }
+
+    input[type=checkbox]:checked::after {
+      content: '';
+      position: absolute;
+      width: 9px;
+      height: 4px;
+      top: 4.5px;
+      left: 3.5px;
+      border-left: 2.5px solid white;
+      border-bottom: 2.5px solid white;
+      transform: rotate(-45deg);
     }
   </style>
 </body>

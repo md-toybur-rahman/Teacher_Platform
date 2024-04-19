@@ -1,13 +1,4 @@
 # CGB_HTML_CODE
-When students search teacher and click on any teacher in list the about-teacher-popup will open
-In popup when view profile clicked viewDetailProfile will open
-In popun when book call is clicked book-call will open
-In viewDetailProfile when: 
-    book call is clicked the book-call page opens
-    book conference clicked the bookConference page opens (in bookConference when any conference is clicked conferenceDetails will open)
-
-The back button on book-call, bookConference, conferenceDetails redirects back to search.html to search other teachers.# Teacher_Platform
-
 
 <!-- Note by Toybur -->
 
@@ -29,5 +20,8 @@ The back button on book-call, bookConference, conferenceDetails redirects back t
 (This note for all of 3 pages of callEarning, conferenceEarning and referralsEarning.) if anything will need to change.let me know.
 
 7. In Create conference page i had to deleted your datepicker div. because that was unnecessary. I made a new div and arranged it in line no 331-344. Hope you like it. I created one more extra share button for desktop responsive purpose. Desktop share button in line no 308-312 and mobile share button in line no 389-393. Also i had to created a div for "Set Reminder" in line no 348-351. This part was not in mobile design. But its available in desktop design.So i thought that was a mistake of design. then kept it for both design. if you don't want it for mobile then use this class ("hidden sm:flex items-center justify-between px-5 py-2 shadow-lg rounded-full w-full sm:w-1/2") replace current classes (all classes).
+
+
+8. Carefully check the EditProfileTeacher page. There have lot of changes. I had to made lot of new code according your design.Which was not available in your code before. And i also made 1 more css class named "inactive" and changed little code of javascript for active and inactive toogle function. So i repeat that please check full codes of the page and match it with the design. If you feel discomfort to understand then knock me.
 
  -->

@@ -3,6 +3,10 @@
 <!-- Note by Toybur -->
 
 <!-- 
+
+Special Note: The line numbers below those could be little change.
+
+
 1. Made a section in about available_call page line no 338-346. it was missed in your code. And there will be a select tag. that will be your work. line no -343
 
 2. Change Week style.
@@ -26,5 +30,7 @@
 
 
 9. In viewProfileStudent page i can see a extra button for "Start a chat". I think you don't need both. Spite I did the code for the extra button in line no 83-89. And i kept it with a comment. If needed, uncommetn it and use it else remove it. as your wish.
+
+10. For the Teacher-book-call page i saw 2 design in figma file. but i get 1 html file for the design. so i did it according to you html file. and added two button for set availability and share availbility.
 
  -->

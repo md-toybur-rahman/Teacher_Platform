@@ -24,4 +24,7 @@
 
 8. Carefully check the EditProfileTeacher page. There have lot of changes. I had to made lot of new code according your design.Which was not available in your code before. And i also made 1 more css class named "inactive" and changed little code of javascript for active and inactive toogle function. So i repeat that please check full codes of the page and match it with the design. One more things, You have to change the select options as you need.  If you feel discomfort to understand then knock me. In line no 205-231 have a optional design. according to figma design there have 2 design for this page. in one page this features is available and in other page this design is not available. So i did it. It's your opinion that are you keep it or not.
 
+
+9. In viewProfileStudent page i can see a extra button for "Start a chat". I think you don't need both. Spite I did the code for the extra button in line no 83-89. And i kept it with a comment. If needed, uncommetn it and use it else remove it. as your wish.
+
  -->

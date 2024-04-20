@@ -5,7 +5,6 @@
   "name": "html-code",
   "version": "1.0.0",
   "main": "tailwind.config.js",
-  
   "scripts": {
     "build": "npx tailwindcss -i ./styles.css -o ./dist/output.css --watch"
   },
